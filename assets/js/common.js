@@ -93,3 +93,35 @@ $(function () {
         return false;
     });
 });
+
+$(function(){
+    $('.slider-slick').slick(
+        {
+            fade: true,
+        }
+    );
+})
+// Menu
+$(document).ready(function () {
+    $open = false;
+
+    function menuMb() {
+        if ($open == false) {
+            $open = true;
+            $(".ham").addClass("active");
+            $(".menu__nav").addClass("active");
+            $(".menu").addClass("active");
+            $(".menu__btn").addClass("active");
+        } else {
+            $open = false;
+            $(".ham").removeClass("active");
+            $(".menu__nav").removeClass("active");
+            $(".menu").removeClass("active");
+            $(".menu__btn").removeClass("active");
+        }
+    }
+
+    $("#js-menu-btn").on("click", function () {
+        menuMb();
+    });
+});
