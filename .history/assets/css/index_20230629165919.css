@@ -123,7 +123,7 @@ body {
     stroke:#000000;
     fill: #000000;
 }
-.menu__title{
+.menu__right__title{
     border: none;
     width: 55px;
     height: 105px;
@@ -131,13 +131,13 @@ body {
     color: #6c3515;
     transition: .3s ease-in-out;
 }
-.menu__title:hover{
+.menu__right__title:hover{
     background-color: var(--color-secon);
     color: #ffffff;
     stroke:#ffffff;
     fill: #ffffff;
 }
-.menu__title p {
+.menu__right__title p {
     padding: 20px 5px 0 5px;
     font-family: heading;
     font-size: 20px;
