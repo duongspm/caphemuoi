@@ -82,61 +82,50 @@ body::-webkit-scrollbar-track {
 /* ===== Scrollbar CSS ===== */
 #pagetop {
     position: fixed;
-    right: 5em;
-    bottom: 5em;
+    right: 2em;
+    bottom: 2em;
+    z-index: 99;
+    cursor: pointer;
+    display: none;
+    padding: 15px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    transition: 0.2s all;
+    opacity: 0.8;
 }
-
-.arrow {
-    opacity: 1;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    transform-origin: 50% 50%;
-    transform: translate3d(-50%, -50%, 0);
-}
-
-.arrow-1 {
-    animation: arrow-movement 2s ease-in-out infinite;
-}
-
-.arrow-2 {
-    animation: arrow-movement 2s 1s ease-in-out infinite;
-}
-
-.arrow:before,
-.arrow:after {
-    background: rgb(208, 142, 0);
-    content: '';
+#pagetop::after{
     display: block;
-    height: 3px;
+    content: " ";
     position: absolute;
+    width: 105%;
+    height: 105%;
+    filter: blur(24px);
+    background: var(--color-primary);
+    border-radius: 100%;
     top: 0;
     left: 0;
-    width: 30px;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    animation: arrows 1.5s linear infinite;
 }
 
-.arrow:before {
-    transform: rotate(45deg) translateX(95%);
-    transform-origin: center;
+#pagetop i{
+    font-size: 1.5rem;
+    color: var(--color-secon);
+    position: relative;
+    z-index: 2;
+}
+#pagetop:hover{
+    opacity: 1;
 }
 
-.arrow:after {
-    transform: rotate(135deg) translateX(100%);
-    transform-origin: 87% 180%;
-}
-
-@keyframes arrow-movement {
-    0% {
-        opacity: 0;
-        bottom: 45%;
+@keyframes arrows {
+    50% {
+        scale: 1.2;
     }
-
-    70% {
-        opacity: 1;
-    }
-
     100% {
-        opacity: 0;
+        scale: 1.3;
     }
 }
 
@@ -393,6 +382,7 @@ main {
 }
 
 .about__img {
+    width: 56%;
     position: relative;
     z-index: 2;
 }
