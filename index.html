@@ -7,6 +7,7 @@
     <title>Cà Phê Muối</title>
     <link rel="icon" href="./assets/images/logo-big.png" type="image/x-icon" />
     <!-- Import Css -->
+    <link rel="stylesheet" href="assets/css/fancybox.css">
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/aos.css">
@@ -20,13 +21,14 @@
     <!--/ Import Css -->
 
     <!-- Import Js -->
-    <script src="./assets/js/jquery.3.4.1.min.js"></script>
-    <script src="./assets/js/apps.js"></script>
-    <script src="./assets/js/aos.js"></script>
-    <script src="./assets/js/common.js"></script>
-    <script src="./assets/js/jquery.inview.min.js"></script>
-    <script src="./assets/js/slick.js"></script>
-    <script src="./assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.3.4.1.min.js"></script>
+    <script src="assets/js/fancybox.umd.js"></script>
+    <script src="assets/js/apps.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/jquery.inview.min.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/wow.min.js"></script>
     <!--/ Import Js -->
 
 
@@ -140,8 +142,8 @@
                     <div class="info__logo">
                         <img src="assets/images/logo-small.png" width="72" height="69" loading="lazy" alt="Logo">
                     </div>
-                    <p class="info__title">Menu cà phê</p>
-                    <p class="info__name">chú long</p>
+                    <p class="info__title info__title--or">Menu cà phê</p>
+                    <p class="info__name info__name--green">chú long</p>
                 </div>
                 <div class="bs__box">
                     <div class="bs__left">
@@ -395,8 +397,66 @@
                 </div>
             </div>
         </section>
+        <section id="album">
+            <div class="album__video">
+                <div class="album__video__play">
+                    <img src="assets/images/album-video.jpeg" alt="">
+                    <img class="btn__play" src="assets/images/icon-play.png" alt="">
+                </div>
+            </div>
+            <div class="wrap-content">
+                <div class="album__video">
+                    <div class="album__video__play">
+                        <img class="img" src="assets/images/album-video.jpeg" width="770" height="486" loading="lazy" alt="Video">
+                        <img src="assets/images/play.png" alt="Button Play" width="116" height="116" loading="lazy" class="btn__play">
+                    </div>
+                </div>
+                <div class="album">
+                    <div class="album__item">
+                        <div class="album__name">
+                            <div class="info">
+                                <div class="info__logo">
+                                    <img src="assets/images/logo-small.png" width="72" height="69" loading="lazy" alt="Logo">
+                                </div>
+                                <p class="info__title info__title--nude">Album ảnh</p>
+                                <p class="info__name info__name--or">chú long</p>
+                            </div>
+                        </div>
+                        <a class="album__img" data-fancybox="gallery" href="assets/images/album-img.jpg">
+                            <img src="assets/images/album-img.jpg" alt="Album Item 01" width="380" height="455" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="album__item delayed-section">
+                        <a data-fancybox="gallery" href="assets/images/album-img2.jpg" class="album__img">
+                            <img src="assets/images/album-img2.jpg" alt="Album Item 02" width="395" height="425" loading="lazy">
+                        </a>
+                        <div class="album__btn">
+                            <div class="btn__more btn__more--or">
+                                <a href=""><i>&rarr;</i>Khám phá thêm</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="album__item aos-init aos-animate"  data-aos="zoom-in" data-aos-delay="450">
+                        <a data-fancybox="gallery" href="assets/images/album-img3.jpg" class="album__img">
+                            <img src="assets/images/album-img3.jpg" alt="Album Item 03" width="270" height="425" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="album__item">
+                        <a data-fancybox="gallery" href="assets/images/album-img4.jpg" class="album__img">
+                            <img src="assets/images/album-img4.jpg" alt="Album Item 04" width="360" height="450" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="album__title">
+                        <img src="assets/images/album_text.png" alt="Album Title" width="68" height="484" loading="lazy">
+                    </div>
+                </div>
+            </div> 
+        </section>
     </main>
-    <div id="pagetop"></div>
+    <div class="arrow arrow-1"></div>
+    <div class="arrow arrow-2"></div>
+    <div id="pagetop">
+    </div>
 </body>
 
 </html>
