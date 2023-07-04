@@ -824,6 +824,49 @@ main {
 }
 
 /* ======= / Album ======= */
+
+/* ======= / Story ======= */
+#story{
+    padding-top: 5em;
+}
+.story{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.story__left{
+    width: 50%;
+    text-align: center;
+}
+.story__left__slick{
+    display: block;
+}
+.story__left__img{
+    margin-top: 2.6em;
+    position: relative;
+}
+.story__more{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 3em;
+}
+.story__right{
+    width: 40%;
+    cursor: pointer;
+}
+.story__item__title{
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: 35px;
+    color: #353535;
+    font-family: heading2;
+    text-align: center;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+/* ======= / Story ======= */
+
 /* Animation */
 @keyframes spin {
     to {
