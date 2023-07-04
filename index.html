@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,10 @@
     <link rel="stylesheet" href="assets/css/slick-style.css">
     <link rel="stylesheet" href="assets/css/slick-theme.css">
     <link rel="stylesheet" href="assets/css/slick.css">
+    <!-- <link rel="stylesheet" href="assets/css/fontawesome.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--/ Import Css -->
 
     <!-- Import Js -->
@@ -26,63 +31,372 @@
 
 
 </head>
-<body>
-        <div class="menu">
-            <div class="wrap-content">
-                <div class="menu__nav">
-                    <ul>
-                        <li>
-                            <a href="">Trang chủ</a>
-                        </li>
-                        ̣<li><a href="">Giới thiệu</a></li>
-                        <li><a href="">Menu</a></li>
-                        <li><a href="">Album</a></li>
-                        <li><a href="">Tin tức</a></li>
-                        <li><a href="">Hệ thống cửa hàng</a></li>
-                        <li><a href="">Liên hệ</a></li>
-                    </ul>
-                </div>
-                <div class="menu__right">
-                    <div class="menu__title">
-                        <p>Me <br> nu</p>
-                        <div class="menu__btn" id="js-menu-btn">
-                            <svg class="ham hamRotate ham4" viewBox="0 0 100 100" width="80">
-                                <path class="line top"
-                                    d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
-                                <path class="line middle" d="m 70,50 h -40" />
-                                <path class="line bottom"
-                                    d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="menu__social">
-                        <a href="">
-                            <img src="./assets/images/facebook-f.svg" alt="">
-                        </a>
-                        <a href="">
-                            <img src="./assets/images/instagram.svg" alt="">
-                        </a>
-                        <a href="">
-                            <img src="./assets/images/tiktok.svg" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-    <div class="slider">
-        <div class="slider-slick">
-            <div>
-                <div class="slider__item">
-                    <img src="./assets/images/slider.jpg" width="1266" height="670" alt="Slider">
-                </div>
+<body>
+    <div class="menu">
+        <div class="wrap-content">
+            <div class="menu__nav">
+                <ul>
+                    <li>
+                        <a class="active" href="#">Trang chủ</a>
+                    </li>
+                    ̣<li><a href="#about">Giới thiệu</a></li>
+                    <li><a href="#best-seller">Menu</a></li>
+                    <li><a href="#album">Album</a></li>
+                    <li><a href="#blog">Tin tức</a></li>
+                    <li><a href="#store">Hệ thống cửa hàng</a></li>
+                    <li><a href="#contact">Liên hệ</a></li>
+                </ul>
             </div>
-            <div>
-                <div class="slider__item">
-                    <img src="./assets/images/slider.jpg" width="1266" height="670" alt="Slider">
+            <div class="menu__right">
+                <div class="menu__title">
+                    <p>Me <br> nu</p>
+                    <div class="menu__btn" id="js-menu-btn">
+                        <svg class="ham hamRotate ham4" viewBox="0 0 100 100" width="80">
+                            <path class="line top"
+                                d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
+                            <path class="line middle" d="m 70,50 h -40" />
+                            <path class="line bottom"
+                                d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="menu__social">
+                    <a href="">
+                        <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                            <path
+                                d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path
+                                d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
+    <div class="slider">
+        <div class="slider-slick">
+            <div>
+                <div class="slider__item">
+                    <img src="assets/images/slider.jpg" width="1266" height="670" alt="Slider">
+                </div>
+            </div>
+            <div>
+                <div class="slider__item">
+                    <img src="assets/images/slider02.jpg" width="1266" height="670" alt="Slider">
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section class="about" id="about">
+            <div class="wrap-content">
+                <div class="about__box">
+                    <div class="about__content">
+                        <h2 class="about__name">
+                            <p class="name__top">cà phê muối</p>
+                            <p class="name__bottom">chú long</p>
+                        </h2>
+                        <p class="about__desc">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam iusto temporibus porro,
+                            asperiores ducimus, veritatis, voluptatem quas dolores consequatur necessitatibus rem magnam
+                            unde perferendis ab eveniet non blanditiis magni sunt?
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam iusto temporibus porro,
+                            asperiores ducimus, veritatis, voluptatem quas dolores consequatur necessitatibus rem magnam
+                            unde perferendis ab eveniet non blanditiis magni sunt?
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam iusto temporibus porro,
+                            asperiores ducimus, veritatis, voluptatem quas dolores consequatur necessitatibus rem magnam
+                            unde perferendis ab eveniet non blanditiis magni sunt?
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam iusto temporibus porro,
+                            asperiores ducimus, veritatis, voluptatem quas dolores consequatur necessitatibus rem magnam
+                            unde perferendis ab eveniet non blanditiis magni sunt?
+                        </p>
+                        <div class="about__more">
+                            <div class="btn__more btn__more--green">
+                                <a href=""><i>&rarr;</i>Khám phá thêm</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__img">
+                        <img src="assets/images/about_img.png" alt="About Image" width="709" height="451"
+                            loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="best-seller" id="best-seller">
+            <div class="wrap-content">
+                <div class="info">
+                    <div class="info__logo">
+                        <img src="assets/images/logo-small.png" width="72" height="69" loading="lazy" alt="Logo">
+                    </div>
+                    <p class="info__title">Menu cà phê</p>
+                    <p class="info__name">chú long</p>
+                </div>
+                <div class="bs__box">
+                    <div class="bs__left">
+                        <div class="js-slickbs-for">
+                            <div>
+                                <div class="bs__img">
+                                    <div class="img">
+                                        <img src="assets/images/bacxiu.png" height="374" width="264" loading="lazy"
+                                            alt="">
+                                    </div>
+                                    <div class="bs__img__content">
+                                        <div class="name">
+                                            <p>Bạc xỉu</p>
+                                            <p>Bạc xỉu</p>
+                                        </div>
+                                        <p class="price">15k</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="bs__img">
+                                    <div class="img">
+                                        <img src="assets/images/capheden.png" height="374" width="264" loading="lazy"
+                                            alt="">
+                                    </div>
+                                    <div class="bs__img__content">
+                                        <div class="name">
+                                            <p>Cà phê đen</p>
+                                            <p>Cà phê đen</p>
+                                        </div>
+                                        <p class="price">15k</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="bs__img">
+                                    <div class="img">
+                                        <img src="assets/images/caphedua.png" height="374" width="264" loading="lazy"
+                                            alt="">
+                                    </div>
+                                    <div class="bs__img__content">
+                                        <div class="name">
+                                            <p>Cà phê dừa</p>
+                                            <p>Cà phê dừa</p>
+                                        </div>
+                                        <p class="price">15k</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- start 4 -->
+                            <div>
+                                <div class="bs__img">
+                                    <div class="img">
+                                        <img src="assets/images/bacxiu.png" height="374" width="264" loading="lazy"
+                                            alt="">
+                                    </div>
+                                    <div class="bs__img__content">
+                                        <div class="name">
+                                            <p>Bạc xỉu</p>
+                                            <p>Bạc xỉu</p>
+                                        </div>
+                                        <p class="price">15k</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="bs__img">
+                                    <div class="img">
+                                        <img src="assets/images/capheden.png" height="374" width="264" loading="lazy"
+                                            alt="">
+                                    </div>
+                                    <div class="bs__img__content">
+                                        <div class="name">
+                                            <p>Cà phê đen</p>
+                                            <p>Cà phê đen</p>
+                                        </div>
+                                        <p class="price">15k</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="bs__img">
+                                    <div class="img">
+                                        <img src="assets/images/caphedua.png" height="374" width="264" loading="lazy"
+                                            alt="">
+                                    </div>
+                                    <div class="bs__img__content">
+                                        <div class="name">
+                                            <p>Cà phê dừa</p>
+                                            <p>Cà phê dừa</p>
+                                        </div>
+                                        <p class="price">15k</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- start 6 -->
+                            <div>
+                                <div class="bs__img">
+                                    <div class="img">
+                                        <img src="assets/images/bacxiu.png" height="374" width="264" loading="lazy"
+                                            alt="">
+                                    </div>
+                                    <div class="bs__img__content">
+                                        <div class="name">
+                                            <p>Bạc xỉu 7</p>
+                                            <p>Bạc xỉu</p>
+                                        </div>
+                                        <p class="price">15k</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="bs__img">
+                                    <div class="img">
+                                        <img src="assets/images/capheden.png" height="374" width="264" loading="lazy"
+                                            alt="">
+                                    </div>
+                                    <div class="bs__img__content">
+                                        <div class="name">
+                                            <p>Cà phê đen 7</p>
+                                            <p>Cà phê đen</p>
+                                        </div>
+                                        <p class="price">15k</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="bs__img">
+                                    <div class="img">
+                                        <img src="assets/images/caphedua.png" height="374" width="264" loading="lazy"
+                                            alt="">
+                                    </div>
+                                    <div class="bs__img__content">
+                                        <div class="name">
+                                            <p>Cà phê dừa</p>
+                                            <p>Cà phê dừa</p>
+                                        </div>
+                                        <p class="price">15k</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bs__right">
+                        <div class="bs__boxlist">
+                            <div class="js-slickbs-nav">
+                                <div>
+                                    <div class="bs__item bs__img__content">
+                                        <div class="name">
+                                            <p>Bạc xỉu</p>
+                                            <p>Bạc xỉu</p>
+                                        </div>
+                                        <div class="price">
+                                            15.000Đ
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="bs__item bs__img__content">
+                                        <div class="name">
+                                            <p>Cà phê đen</p>
+                                            <p>Cà phê đen</p>
+                                        </div>
+                                        <div class="price">
+                                            15.000Đ
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="bs__item bs__img__content">
+                                        <div class="name">
+                                            <p>cà phê dừa</p>
+                                            <p>cà phê dừa</p>
+                                        </div>
+                                        <div class="price">
+                                            15.000Đ
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- start 4 -->
+                                <div>
+                                    <div class="bs__item bs__img__content">
+                                        <div class="name">
+                                            <p>Bạc xỉu 4</p>
+                                            <p>Bạc xỉu</p>
+                                        </div>
+                                        <div class="price">
+                                            15.000Đ
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="bs__item bs__img__content">
+                                        <div class="name">
+                                            <p>Cà phê đen 4</p>
+                                            <p>Cà phê đen</p>
+                                        </div>
+                                        <div class="price">
+                                            15.000Đ
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="bs__item bs__img__content">
+                                        <div class="name">
+                                            <p>cà phê dừa</p>
+                                            <p>cà phê dừa</p>
+                                        </div>
+                                        <div class="price">
+                                            15.000Đ
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- start 6 -->
+                                <div>
+                                    <div class="bs__item bs__img__content">
+                                        <div class="name">
+                                            <p>Bạc xỉu 7</p>
+                                            <p>Bạc xỉu</p>
+                                        </div>
+                                        <div class="price">
+                                            15.000Đ
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="bs__item bs__img__content">
+                                        <div class="name">
+                                            <p>Cà phê đen 8</p>
+                                            <p>Cà phê đen</p>
+                                        </div>
+                                        <div class="price">
+                                            15.000Đ
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="bs__item bs__img__content">
+                                        <div class="name">
+                                            <p>cà phê dừa</p>
+                                            <p>cà phê dừa</p>
+                                        </div>
+                                        <div class="price">
+                                            15.000Đ
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="pagetop"></div>
 </body>
+
 </html>
