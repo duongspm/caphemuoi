@@ -442,7 +442,7 @@ main {
     width: 175px;
     height: 35px;
     font-size: 14px;
-    line-height: 27px;
+    line-height: 1.5;
     position: relative;
     z-index: 5;
     text-decoration: none;
@@ -517,7 +517,7 @@ main {
     /* font-size: 40px; */
     font-size: 1.25rem;
     font-size: clamp(1.25rem, 1rem + 1.25vw, 2.5rem);
-    line-height: 45px;
+    line-height: 1;
     z-index: 1;
     position: relative;
     display: inline-block;
@@ -1088,6 +1088,172 @@ main {
     color: var(--color-secon);
 }
 /* Feedback */
+
+/* Branch */
+
+#branch{
+    padding: 50px 0;
+    background-image: url(../images/album_bg.jpg);
+    background-size: 100%;
+}
+.branch__heading{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.branch__heading h3{
+    position: relative;
+    display: inline-block;
+    font-family: heading;
+    filter: drop-shadow(2.5px 4.33px 0 #6c3a21);
+    font-size: 45px;
+    letter-spacing: -1px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #fcb53e;
+}
+.branch__heading h3::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 62px;
+    background: url(../images/item-title_bottom-nude.png) no-repeat;
+    left: -50px;
+    bottom: -20px;
+    filter: transparent;
+}
+.branch__heading h3::before{
+    content: '';
+    display: block;
+    width: 32px;
+    height: 45px;
+    background: url(../images/item-title_top-nude.png) no-repeat;
+    position: absolute;
+    right: -50px;
+    top: 0;
+}
+.branch__nav{
+    text-align: center;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.branch__nav .nav__item{
+    display: inline-block;
+    cursor: pointer;
+    transition: .3s;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: heading;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #4e6034;
+    background-color: #fcb53e;
+    border-radius: 10px;
+    padding: 7px 20px;
+    margin: 0 10px 10px 10px;
+    filter: drop-shadow(-5px 5px 0 #6c3a21);
+}
+.branch__nav .nav__item.active, .branch__nav .nav__item:hover {
+    filter: drop-shadow(0 0 0 #6c3a21);
+}
+.branch__list{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+}
+.branch__item{
+    background: #f1e5cf;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+}
+.branch__item::after{
+    content: "";
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--color-primary);
+    border-radius: 15px;
+    z-index: 1;
+    transition: 0.2s linear;
+}
+.branch__item:hover::after{
+    height: 100%;
+}
+.branch__item .img{
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+.branch__item .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.branch__item .address__info{
+    position: relative;
+    z-index: 2;
+}
+.branch__item .address{
+    font-family: heading;
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--color-secon);
+    transition: .3s ease-in-out;
+    margin-bottom: 3px;
+    display:-webkit-box;
+    -webkit-line-clamp:1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;;
+    transition: 0.2s linear;
+}
+.branch__item .address:hover{
+    color: #ffffff;
+}
+.branch__item .map{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    color: #663c16;
+    cursor: pointer;
+}
+.branch__item .map p{
+    position: relative;
+}
+.branch__item .map p::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transform: scaleX(0);
+    transition: .4s ease-in-out;
+}
+.branch__item .map p:hover::after{
+    transform: scaleX(1);
+}
+/* Branch */
 
 /* Animation */
 @keyframes spin {
