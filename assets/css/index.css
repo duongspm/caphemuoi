@@ -940,7 +940,6 @@ main {
     z-index: 2;
     position: relative;
 }
-
 .banner::after {
     content: "";
     position: absolute;
