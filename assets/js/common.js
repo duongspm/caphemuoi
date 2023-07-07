@@ -193,7 +193,38 @@ $(document).ready(function(){
         slidesToScroll: 1,
         asNavFor: '.slider-for',
         dots: true,
+        arrows: false,
+        autoplay: true, 
+        autoplaySpeed: 2000, 
+        speed: 1000,
         focusOnSelect: true
     });
 });
 
+/* Anchorlink trong 1 trang */
+$(function () {
+    setTimeout(function () {
+        $('a.anchor').on('click', function (e) {
+            var thisHref = $(this).attr("href");            
+            var navH = $('header').innerHeight();
+            var speed = 800;
+            var target = $(thisHref == "#" || thisHref == "" ? 'html' : thisHref);
+            var position = target.offset().top - navH + 1;
+            $("html, body").animate({
+                scrollTop: position
+            }, speed, "swing");
+            return false;
+        });                
+        
+    }, 1000);
+});
+
+$(function () {
+    $(".js-slick-feedback").slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true, 
+        autoplaySpeed: 1000, 
+        speed: 1000,
+    });
+});
