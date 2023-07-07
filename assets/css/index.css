@@ -211,7 +211,7 @@ body::-webkit-scrollbar-track {
 
 .menu__right {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     width: 160px;
 }
@@ -1090,7 +1090,6 @@ main {
 /* Feedback */
 
 /* Branch */
-
 #branch{
     padding: 50px 0;
     background-image: url(../images/album_bg.jpg);
