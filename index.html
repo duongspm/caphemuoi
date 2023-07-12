@@ -2,19 +2,35 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cà Phê Muối</title>
-    <link rel="icon" href="./assets/images/logo-big.png" type="image/x-icon" />
+    <title>Cà Phê Muối Chú Dương | by Duongg</title>
+    <meta name="keywords" content="Cà Phê Muối Chú Dương" />
+    <meta name="description" content="Cà Phê Muối Chú Dương" />
+    <!-- Robots -->
+    <meta name="robots" content="index,follow" />
+
+    <!-- Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Chú Dương" />
+    <meta property="og:title" content="Cà Phê Muối Chú Dương" />
+    <meta property="og:description" content="Cà Phê Muối Chú Dương" />
+    <meta property="og:url" content="https://www.arcavietnam.asia/duongg/caphemuoi/" />
+
+    <!-- Chống đổi màu trên IOS -->
+    <meta name="format-detection" content="telephone=no">
+    
+    <link rel="icon" href="assets/images/logo-big.png" type="image/x-icon"/>
     <!-- Import Css -->
     <link rel="stylesheet" href="assets/css/fancybox.css">
     <link rel="stylesheet" href="assets/css/index.css">
+
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/aos.css">
     <link rel="stylesheet" href="assets/css/slick-style.css">
     <link rel="stylesheet" href="assets/css/slick-theme.css">
     <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/icon.css">
+
     <!-- <link rel="stylesheet" href="assets/css/fontawesome.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
@@ -30,7 +46,8 @@
     <script src="assets/js/jquery.inview.min.js"></script>
     <script src="assets/js/slick.js"></script>
     <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/icon.js"></script>
+    <script src="assets/js/peshiner.js"></script>
+
     <!--/ Import Js -->
 
 
@@ -45,17 +62,17 @@
                         <a class="active" href="#">Trang chủ</a>
                     </li>
                     <li><a href="#about">Giới thiệu</a></li>
-                    <li><a href="#best-seller">Menu</a></li>
-                    <li><a href="#album">Album</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="album.html">Album</a></li>
                     <li><a href="#feedback">Feedback</a></li>
-                    <li><a href="#story">Tin tức</a></li>
-                    <li><a href="#branch">Hệ thống cửa hàng</a></li>
-                    <li><a href="#contact">Liên hệ</a></li>
+                    <li><a href="blog.html">Tin tức</a></li>
+                    <li><a href="branch.html">Hệ thống cửa hàng</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
                 </ul>
             </div>
             <div class="menu__right">
                 <div class="menu__title">
-                    <p>Me <br> nu</p>
+                    <p>Me<br>nu</p>
                     <div class="menu__btn" id="js-menu-btn">
                         <svg class="ham hamRotate ham4" viewBox="0 0 100 100" width="80">
                             <path class="line top"
@@ -67,19 +84,19 @@
                     </div>
                 </div>
                 <div class="menu__social">
-                    <a href="">
+                    <a href="https://www.facebook.com/profile.php?id=100084115653621" target="_blank" title="Fanpage DD Fruit Tea">
                         <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                             <path
                                 d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
                         </svg>
                     </a>
-                    <a href="">
+                    <a href="https://www.instagram.com/dungttt2307/?hl=vi" target="_blank" title="Instagram chị chủ">
                         <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                             <path
                                 d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
                         </svg>
                     </a>
-                    <a href="">
+                    <a href="https://www.tiktok.com/@liendung_ddcoffeetea/video/7254089893419191558" target="_blank" title="TikTok">
                         <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                             <path
                                 d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
@@ -102,24 +119,14 @@
         <section class="about" id="about">
             <div class="wrap-content">
                 <div class="about__box">
-                    <div class="about__content">
+                    <div class="about__content" data-aos="fade-right">
                         <h2 class="about__name">
-                            <p class="name__top">cà phê muối</p>
-                            <p class="name__bottom">chú long</p>
+                            <span class="name__top">cà phê muối</span>
+                            <span class="name__bottom">Chú Dương</span>
                         </h2>
                         <p class="about__desc">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam iusto temporibus porro,
-                            asperiores ducimus, veritatis, voluptatem quas dolores consequatur necessitatibus rem magnam
-                            unde perferendis ab eveniet non blanditiis magni sunt?
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam iusto temporibus porro,
-                            asperiores ducimus, veritatis, voluptatem quas dolores consequatur necessitatibus rem magnam
-                            unde perferendis ab eveniet non blanditiis magni sunt?
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam iusto temporibus porro,
-                            asperiores ducimus, veritatis, voluptatem quas dolores consequatur necessitatibus rem magnam
-                            unde perferendis ab eveniet non blanditiis magni sunt?
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam iusto temporibus porro,
-                            asperiores ducimus, veritatis, voluptatem quas dolores consequatur necessitatibus rem magnam
-                            unde perferendis ab eveniet non blanditiis magni sunt?
+                            Bắt đầu với sự bỡ ngỡ, quầy Cà Phê Muối của Chú Dương đã dần chiếm được lòng tin và trở thành một điểm hẹn quen thuộc cho những người yêu thích cà phê tại thành phố Hồ Chí Minh với một hương vị đặc trưng và một với trái tim đầy nhiệt huyết, khát khao mang đến cho khách hàng những trải nghiệm cà phê đặc biệt.
+                            Mỗi ly cà phê tại Cà Phê Muối Chú Dương được pha chế bằng cả tình yêu và sự chân thành, mang trong mình niềm hạnh phúc của người làm, với mong muốn mang đến cho khách hàng những phút giây thư giãn đầy ý nghĩa. 
                         </p>
                         <div class="about__more">
                             <div class="btn__more btn__more--green">
@@ -127,7 +134,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="about__img">
+                    <div class="about__img" data-aos="fade-left">
                         <img src="assets/images/about_img.png" alt="About Image" width="709" height="451"
                             loading="lazy">
                     </div>
@@ -136,15 +143,15 @@
         </section>
         <section class="best-seller" id="best-seller">
             <div class="wrap-content">
-                <div class="info">
+                <div class="info" data-aos="fade-down">
                     <div class="info__logo">
                         <img src="assets/images/logo-small.png" width="72" height="69" loading="lazy" alt="Logo">
                     </div>
-                    <p class="info__title info__title--or">Menu cà phê</p>
-                    <p class="info__name info__name--green">chú long</p>
+                    <h3 class="info__title info__title--or">Menu cà phê</h3>
+                    <p class="info__name info__name--green">Chú Dương</p>
                 </div>
                 <div class="bs__box">
-                    <div class="bs__left">
+                    <div class="bs__left" data-aos="fade-right">
                         <div class="js-slickbs-for">
                             <div>
                                 <div class="bs__img">
@@ -285,7 +292,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="bs__right">
+                    <div class="bs__right" data-aos="fade-left">
                         <div class="bs__boxlist">
                             <div class="js-slickbs-nav">
                                 <div>
@@ -396,37 +403,44 @@
             </div>
         </section>
         <section id="album">
-            <div class="album__video">
-                <div class="album__video__play">
-                    <img src="assets/images/album-video.jpeg" alt="">
-                    <img class="btn__play" src="assets/images/icon-play.png" alt="">
-                </div>
-            </div>
             <div class="wrap-content">
-                <div class="album__video">
-                    <div class="album__video__play">
-                        <img class="img" src="assets/images/album-video.jpeg" width="770" height="486" loading="lazy" alt="Video">
-                        <img src="assets/images/play.png" alt="Button Play" width="116" height="116" loading="lazy" class="btn__play">
+                <div class="album__video" data-aos="zoom-in" data-aos-delay="0">
+                    <div class="album__video__play ">
+                        <div class="img scale-img">
+                            <img src="assets/images/album-video.jpeg" width="770" height="486" loading="lazy"
+                                alt="Video">
+                        </div>
+                        <a href="https://youtu.be/xyfCRxlyraM" data-fancybox="video">
+                            <img src="assets/images/play.png" alt="Button Play" width="116" height="116" loading="lazy"
+                                class="btn__play">
+                        </a>
                     </div>
                 </div>
                 <div class="album">
-                    <div class="album__item">
+                    <div class="album__item" data-aos="zoom-in" data-aos-delay="300">
                         <div class="album__name">
                             <div class="info">
                                 <div class="info__logo">
-                                    <img src="assets/images/logo-small.png" width="72" height="69" loading="lazy" alt="Logo">
+                                    <img src="assets/images/logo-small.png" width="72" height="69" loading="lazy"
+                                        alt="Logo">
                                 </div>
-                                <p class="info__title info__title--nude">Album ảnh</p>
-                                <p class="info__name info__name--or">chú long</p>
+                                <h3 class="info__title info__title--nude">Album ảnh</h3>
+                                <p class="info__name info__name--or">Chú Dương</p>
                             </div>
                         </div>
                         <a class="album__img" data-fancybox="gallery" href="assets/images/album-img.jpg">
-                            <img src="assets/images/album-img.jpg" alt="Album Item 01" width="380" height="455" loading="lazy">
+                            <div class="hover_sang2 scale-img">
+                                <img src="assets/images/album-img.jpg" alt="Album Item 01" width="380" height="455"
+                                    loading="lazy">
+                            </div>
                         </a>
                     </div>
-                    <div class="album__item delayed-section">
+                    <div class="album__item delayed-section" data-aos="zoom-in" data-aos-delay="450">
                         <a data-fancybox="gallery" href="assets/images/album-img2.jpg" class="album__img">
-                            <img src="assets/images/album-img2.jpg" alt="Album Item 02" width="395" height="425" loading="lazy">
+                            <div class="hover_sang2 scale-img">
+                                <img src="assets/images/album-img2.jpg" alt="Album Item 02" width="395" height="425"
+                                    loading="lazy">
+                            </div>
                         </a>
                         <div class="album__btn">
                             <div class="btn__more btn__more--or">
@@ -434,33 +448,41 @@
                             </div>
                         </div>
                     </div>
-                    <div class="album__item aos-init aos-animate"  data-aos="zoom-in" data-aos-delay="450">
+                    <div class="album__item" data-aos="zoom-in" data-aos-delay="500">
                         <a data-fancybox="gallery" href="assets/images/album-img3.jpg" class="album__img">
-                            <img src="assets/images/album-img3.jpg" alt="Album Item 03" width="270" height="425" loading="lazy">
+                            <div class="hover_sang2 scale-img">
+                                <img src="assets/images/album-img3.jpg" alt="Album Item 03" width="270" height="425"
+                                    loading="lazy">
+                            </div>
                         </a>
                     </div>
-                    <div class="album__item">
+                    <div class="album__item" data-aos="zoom-in" data-aos-delay="550">
                         <a data-fancybox="gallery" href="assets/images/album-img4.jpg" class="album__img">
-                            <img src="assets/images/album-img4.jpg" alt="Album Item 04" width="360" height="450" loading="lazy">
+                            <div class="hover_sang2 scale-img">
+                                <img src="assets/images/album-img4.jpg" alt="Album Item 04" width="360" height="450"
+                                    loading="lazy">
+                            </div>
                         </a>
                     </div>
                     <div class="album__title">
-                        <img src="assets/images/album_text.png" alt="Album Title" width="68" height="484" loading="lazy">
+                        <img src="assets/images/album_text.png" alt="Album Title" width="68" height="484"
+                            loading="lazy">
                     </div>
                 </div>
-            </div> 
+            </div>
         </section>
         <section id="story">
             <div class="wrap-content">
                 <div class="story">
-                    <div class="story__left">
+                    <div class="story__left" data-aos="fade-right">
                         <div class="story__title">
                             <div class="info">
                                 <div class="info__logo">
-                                    <img src="assets/images/logo-small.png" width="72" height="69" loading="lazy" alt="Logo">
+                                    <img src="assets/images/logo-small.png" width="72" height="69" loading="lazy"
+                                        alt="Logo">
                                 </div>
-                                <p class="info__title info__title--or">Câu chuyện về</p>
-                                <p class="info__name info__name--green">chú long</p>
+                                <h3 class="info__title info__title--or">Câu chuyện về</h3>
+                                <p class="info__name info__name--green">Chú Dương</p>
                             </div>
                         </div>
                         <div class="story__left__slick">
@@ -474,7 +496,8 @@
                             </div>
                         </div>
                         <div class="story__left__img">
-                            <img src="assets/images/story-img-left.png" alt="Story Left Image" width="600" height="530" loading="lazy">
+                            <img src="assets/images/story-img-left.png" alt="Story Left Image" width="600" height="530"
+                                loading="lazy">
                             <div class="story__more">
                                 <div class="btn__more btn__more--brown">
                                     <a href="">
@@ -484,18 +507,24 @@
                             </div>
                         </div>
                     </div>
-                    <div class="story__right">
+                    <div class="story__right" data-aos="fade-left">
                         <div class="slider-nav">
                             <div>
                                 <div class="story__item__img">
-                                    <img src="assets/images/story-img.png" alt="Story Image 1" height="700" width="459" loading="lazy">
+                                    <div class="hover_sang2">
+                                        <img src="assets/images/story-img.png" alt="Story Image 1" height="700"
+                                            width="459" loading="lazy">
+                                    </div>
                                 </div>
                             </div>
-                            <div>
+                            <!-- <div>
                                 <div class="story__item__img">
-                                    <img src="assets/images/story-img.png" alt="Story Image 2" height="700" width="459" loading="lazy">
+                                    <div class="hover_sang2">
+                                        <img src="assets/images/story-img.png" alt="Story Image 2" height="700"
+                                            width="459" loading="lazy">
+                                    </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -510,24 +539,28 @@
             <div class="wrap-content">
                 <div class="feedback">
                     <div class="feedback__heading">
-                        <div class="info">
+                        <div class="info" data-aos="fade-down">
                             <div class="info__logo">
-                                <img src="assets/images/logo-small.png" width="72" height="69" loading="lazy" alt="Logo">
+                                <img src="assets/images/logo-small.png" width="72" height="69" loading="lazy"
+                                    alt="Logo">
                             </div>
-                            <p class="info__title info__title--or">Ý kiến khách hàng</p>
+                            <h3 class="info__title info__title--or">Ý kiến khách hàng</h3>
                             <p class="info__name info__name--green">Feedback</p>
                         </div>
                     </div>
-                    <div class="feedback__list">
+                    <div class="feedback__list" data-aos="fade-up">
                         <div class="js-slick-feedback">
                             <div>
                                 <div class="feedback__item">
                                     <div class="feedback__desc">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, est ullam magni beatae quasi saepe. Possimus, quis, expedita voluptatum accusantium eum aspernatur neque maiores quo sunt officiis quas, beatae vel.</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, est ullam
+                                            magni beatae quasi saepe. Possimus, quis, expedita voluptatum accusantium
+                                            eum aspernatur neque maiores quo sunt officiis quas, beatae vel.</p>
                                     </div>
                                     <div class="feedback__info">
                                         <div class="feedback__avt">
-                                            <img src="assets/images/album-img2.jpg" width="100" height="100" loading="lazy" alt="Feedback avt">                                        
+                                            <img src="assets/images/album-img2.jpg" width="100" height="100"
+                                                loading="lazy" alt="Feedback avt">
                                         </div>
                                         <div class="feedback__name">
                                             <p class="name">Khach Hang</p>
@@ -539,11 +572,13 @@
                             <div>
                                 <div class="feedback__item">
                                     <div class="feedback__desc">
-                                        <p>eassimus, quis, expedita voluptatum accusantium eum aspernatur neque maiores quo sunt officiis quas, beatae vel.</p>
+                                        <p>eassimus, quis, expedita voluptatum accusantium eum aspernatur neque maiores
+                                            quo sunt officiis quas, beatae vel.</p>
                                     </div>
                                     <div class="feedback__info">
                                         <div class="feedback__avt">
-                                            <img src="assets/images/album-video.jpeg" width="100" height="100" loading="lazy" alt="Feedback avt">                                        
+                                            <img src="assets/images/album-video.jpeg" width="100" height="100"
+                                                loading="lazy" alt="Feedback avt">
                                         </div>
                                         <div class="feedback__name">
                                             <p class="name">2 Khach Hang</p>
@@ -555,11 +590,13 @@
                             <div>
                                 <div class="feedback__item">
                                     <div class="feedback__desc">
-                                        <p> consectetur, quis, expedita voluptatum accusantium eum aspernatur neque maiores quo sunt officiis quas, beatae vel.</p>
+                                        <p> consectetur, quis, expedita voluptatum accusantium eum aspernatur neque
+                                            maiores quo sunt officiis quas, beatae vel.</p>
                                     </div>
                                     <div class="feedback__info">
                                         <div class="feedback__avt">
-                                            <img src="assets/images/album-img3.jpg" width="100" height="100" loading="lazy" alt="Feedback avt">                                        
+                                            <img src="assets/images/album-img3.jpg" width="100" height="100"
+                                                loading="lazy" alt="Feedback avt">
                                         </div>
                                         <div class="feedback__name">
                                             <p class="name">Hang</p>
@@ -576,7 +613,9 @@
         <section id="branch">
             <div class="wrap-content">
                 <div class="branch">
-                    <div class="branch__heading"><h3>cà phê chú long có mặt ở</h3></div>
+                    <div class="branch__heading">
+                        <h3>cà phê Chú Dương có mặt ở</h3>
+                    </div>
                     <div class="branch__nav">
                         <a href="#" class="nav__item">Tất cả</a>
                         <a href="#" class="nav__item">Quận 1</a>
@@ -598,8 +637,9 @@
                     </div>
                     <div class="branch__list">
                         <div class="branch__item">
-                            <div class="img">
-                                <img src="assets/images/branch01.jpg" width="542" height="329" loading="lazy" alt="Chi Nhánh">
+                            <div class="img scale-img hover_sang2">
+                                <img src="assets/images/branch01.jpg" width="542" height="329" loading="lazy"
+                                    alt="Chi Nhánh">
                             </div>
                             <div class="address__info">
                                 <p class="address">Số 68 Nguyễn Huệ, phường Bến Nghé, Quận 1</p>
@@ -610,8 +650,9 @@
                             </div>
                         </div>
                         <div class="branch__item">
-                            <div class="img">
-                                <img src="assets/images/branch02.jpg" width="542" height="329" loading="lazy" alt="Chi Nhánh">
+                            <div class="img scale-img hover_sang2">
+                                <img src="assets/images/branch02.jpg" width="542" height="329" loading="lazy"
+                                    alt="Chi Nhánh">
                             </div>
                             <div class="address__info">
                                 <p class="address">Chánh Nghĩa, thủ dầu một, bình dương</p>
@@ -622,8 +663,9 @@
                             </div>
                         </div>
                         <div class="branch__item">
-                            <div class="img">
-                                <img src="assets/images/branch03.jpg" width="542" height="329" loading="lazy" alt="Chi Nhánh">
+                            <div class="img scale-img hover_sang2">
+                                <img src="assets/images/branch03.jpg" width="542" height="329" loading="lazy"
+                                    alt="Chi Nhánh">
                             </div>
                             <div class="address__info">
                                 <p class="address">161 Ngô Tất Tố, Bình Thạnh</p>
@@ -634,8 +676,9 @@
                             </div>
                         </div>
                         <div class="branch__item">
-                            <div class="img">
-                                <img src="assets/images/branch04.jpg" width="542" height="329" loading="lazy" alt="Chi Nhánh">
+                            <div class="img scale-img hover_sang2">
+                                <img src="assets/images/branch04.jpg" width="542" height="329" loading="lazy"
+                                    alt="Chi Nhánh">
                             </div>
                             <div class="address__info">
                                 <p class="address">71 Đ. Hậu Giang, Phường 5, Quận 6, Thành phố Hồ Chí Minh</p>
@@ -646,49 +689,214 @@
                             </div>
                         </div>
                     </div>
-                </div>        
+                </div>
             </div>
         </section>
-
     </main>
+    <!-- Icon Delivery -->
+    <div class="support-online">
+        <div class="support-content">
+            <a href="https://shopeefood.vn/binh-duong/dd-coffee-tea-nuoc-ep-nguyen-chat-tra-trai-cay-cafe" class="d-block" target="_blank">
+                <img src="assets/images/icon-beamin.jpg" width="50" height="50" loading="lazy" alt="Icon Bea">
+            </a>
+            <a href="https://shopeefood.vn/binh-duong/dd-coffee-tea-nuoc-ep-nguyen-chat-tra-trai-cay-cafe" class="d-block" target="_blank">
+                <img src="assets/images/icon-shopee.png" width="50" height="50" loading="lazy" alt="Icon Shop">
+            </a>
+        </div>
+        <a class="btn-support btn-frame">
+            <div class="animated infinite zoomIn kenit-alo-circle"></div>
+            <div class="animated infinite pulse kenit-alo-circle-fill"></div>
+            <i><img src="assets/images/icon-delivery.png" width="40" height="40" loading="lazy" alt="Icon Delivery"></i>
+        </a>
+        <script src="assets/js/jQuery.WCircleMenu-min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('#my-phone-circle').WCircleMenu({
+                    angle_start: -Math.PI,
+                    delay: 50,
+                    distance: 70,
+                    angle_interval: Math.PI / 4,
+                    easingFuncShow: "easeOutBack",
+                    easingFuncHide: "easeInBack",
+                    step: 5,
+                    openCallback: false,
+                    closeCallback: false,
+                });
+                $('.support-content').hide();
+                $('a.btn-support').click(function (e) {
+                    e.stopPropagation();
+                    $('.support-content').slideToggle();
+                });
+                $('.support-content').click(function (e) {
+                    e.stopPropagation();
+                });
+                $(document).click(function () {
+                    $('.support-content').slideUp();
+                });
+            })
+        </script>
+    </div>
+    <!--/Icon Delivery -->
+
+    <!-- Group Botton -->
+    <div class="ar">
+        <link rel="stylesheet" href="assets/css/arcontactus.css">
+        <script src="assets/js/arcontactus.js"></script>
+        <script>
+            //<![CDATA[
+            var arCuMessages = [];
+            var arCuLoop = false;
+            var arCuCloseLastMessage = false;
+            var arCuPromptClosed = false;
+            var _arCuTimeOut = null;
+            var arCuDelayFirst = 2000;
+            var arCuTypingTime = 2000;
+            var arCuMessageTime = 4000;
+            var arCuClosedCookie = 0;
+            var arcItems = [];
+            window.addEventListener('load', function() {
+                // arCuClosedCookie = arCuGetCookie('arcu-closed');
+                jQuery('#arcontactus').on('arcontactus.init', function() {
+                    if (arCuClosedCookie) {
+                        return false;
+                    }
+                    arCuShowMessages();
+        
+                });
+                jQuery('#arcontactus').on('arcontactus.openMenu', function() {
+                    clearTimeout(_arCuTimeOut);
+                    arCuPromptClosed = true;
+                    jQuery('#contact').contactUs('hidePrompt');
+                    arCuCreateCookie('arcu-closed', 1, 30);
+                });
+                jQuery('#arcontactus').on('arcontactus.hidePrompt', function() {
+                    clearTimeout(_arCuTimeOut);
+                    arCuPromptClosed = true;
+                    arCuCreateCookie('arcu-closed', 1, 30);
+                });
+                var arcItem = {};
+                arcItem.id = 'msg-item-1';
+                arcItem.class = 'msg-item-facebook-messenger';
+                arcItem.title = 'Messenger';
+                arcItem.icon = '<svg xmlns="//www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224 32C15.9 32-77.5 278 84.6 400.6V480l75.7-42c142.2 39.8 285.4-59.9 285.4-198.7C445.8 124.8 346.5 32 224 32zm23.4 278.1L190 250.5 79.6 311.6l121.1-128.5 57.4 59.6 110.4-61.1-121.1 128.5z"></path></svg>';
+                arcItem.href = 'https://www.facebook.com/profile.php?id=100084115653621';
+                arcItem.color = '#02a2ff';
+                arcItems.push(arcItem);
+                var arcItem = {};
+                arcItem.id = 'msg-item-9';
+                arcItem.class = 'msg-item-telegram-plane';
+                arcItem.title = 'Zalo Chat';
+                arcItem.icon = "<svg id='Layer_1' xmlns='//www.w3.org/2000/svg' viewBox='0 0 460.1 436.6'><path fill='currentColor' class='st0' d='M82.6 380.9c-1.8-.8-3.1-1.7-1-3.5 1.3-1 2.7-1.9 4.1-2.8 13.1-8.5 25.4-17.8 33.5-31.5 6.8-11.4 5.7-18.1-2.8-26.5C69 269.2 48.2 212.5 58.6 145.5 64.5 107.7 81.8 75 107 46.6c15.2-17.2 33.3-31.1 53.1-42.7 1.2-.7 2.9-.9 3.1-2.7-.4-1-1.1-.7-1.7-.7-33.7 0-67.4-.7-101 .2C28.3 1.7.5 26.6.6 62.3c.2 104.3 0 208.6 0 313 0 32.4 24.7 59.5 57 60.7 27.3 1.1 54.6.2 82 .1 2 .1 4 .2 6 .2H290c36 0 72 .2 108 0 33.4 0 60.5-27 60.5-60.3v-.6-58.5c0-1.4.5-2.9-.4-4.4-1.8.1-2.5 1.6-3.5 2.6-19.4 19.5-42.3 35.2-67.4 46.3-61.5 27.1-124.1 29-187.6 7.2-5.5-2-11.5-2.2-17.2-.8-8.4 2.1-16.7 4.6-25 7.1-24.4 7.6-49.3 11-74.8 6zm72.5-168.5c1.7-2.2 2.6-3.5 3.6-4.8 13.1-16.6 26.2-33.2 39.3-49.9 3.8-4.8 7.6-9.7 10-15.5 2.8-6.6-.2-12.8-7-15.2-3-.9-6.2-1.3-9.4-1.1-17.8-.1-35.7-.1-53.5 0-2.5 0-5 .3-7.4.9-5.6 1.4-9 7.1-7.6 12.8 1 3.8 4 6.8 7.8 7.7 2.4.6 4.9.9 7.4.8 10.8.1 21.7 0 32.5.1 1.2 0 2.7-.8 3.6 1-.9 1.2-1.8 2.4-2.7 3.5-15.5 19.6-30.9 39.3-46.4 58.9-3.8 4.9-5.8 10.3-3 16.3s8.5 7.1 14.3 7.5c4.6.3 9.3.1 14 .1 16.2 0 32.3.1 48.5-.1 8.6-.1 13.2-5.3 12.3-13.3-.7-6.3-5-9.6-13-9.7-14.1-.1-28.2 0-43.3 0zm116-52.6c-12.5-10.9-26.3-11.6-39.8-3.6-16.4 9.6-22.4 25.3-20.4 43.5 1.9 17 9.3 30.9 27.1 36.6 11.1 3.6 21.4 2.3 30.5-5.1 2.4-1.9 3.1-1.5 4.8.6 3.3 4.2 9 5.8 14 3.9 5-1.5 8.3-6.1 8.3-11.3.1-20 .2-40 0-60-.1-8-7.6-13.1-15.4-11.5-4.3.9-6.7 3.8-9.1 6.9zm69.3 37.1c-.4 25 20.3 43.9 46.3 41.3 23.9-2.4 39.4-20.3 38.6-45.6-.8-25-19.4-42.1-44.9-41.3-23.9.7-40.8 19.9-40 45.6zm-8.8-19.9c0-15.7.1-31.3 0-47 0-8-5.1-13-12.7-12.9-7.4.1-12.3 5.1-12.4 12.8-.1 4.7 0 9.3 0 14v79.5c0 6.2 3.8 11.6 8.8 12.9 6.9 1.9 14-2.2 15.8-9.1.3-1.2.5-2.4.4-3.7.2-15.5.1-31 .1-46.5z'></path></svg>";
+                arcItem.href = 'https://zalo.me/0328818203';
+                arcItem.color = '#0180c7';
+                arcItems.push(arcItem);
+                var arcItem = {};
+                arcItem.id = 'msg-item-6';
+                arcItem.class = 'msg-item-skype';
+                arcItem.title = 'Skype Chat';
+                arcItem.icon = '<svg xmlns="//www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M424.7 299.8c2.9-14 4.7-28.9 4.7-43.8 0-113.5-91.9-205.3-205.3-205.3-14.9 0-29.7 1.7-43.8 4.7C161.3 40.7 137.7 32 112 32 50.2 32 0 82.2 0 144c0 25.7 8.7 49.3 23.3 68.2-2.9 14-4.7 28.9-4.7 43.8 0 113.5 91.9 205.3 205.3 205.3 14.9 0 29.7-1.7 43.8-4.7 19 14.6 42.6 23.3 68.2 23.3 61.8 0 112-50.2 112-112 .1-25.6-8.6-49.2-23.2-68.1zm-194.6 91.5c-65.6 0-120.5-29.2-120.5-65 0-16 9-30.6 29.5-30.6 31.2 0 34.1 44.9 88.1 44.9 25.7 0 42.3-11.4 42.3-26.3 0-18.7-16-21.6-42-28-62.5-15.4-117.8-22-117.8-87.2 0-59.2 58.6-81.1 109.1-81.1 55.1 0 110.8 21.9 110.8 55.4 0 16.9-11.4 31.8-30.3 31.8-28.3 0-29.2-33.5-75-33.5-25.7 0-42 7-42 22.5 0 19.8 20.8 21.8 69.1 33 41.4 9.3 90.7 26.8 90.7 77.6 0 59.1-57.1 86.5-112 86.5z"></path></svg>';
+                arcItem.href = 'skype://0396752611?chat';
+                arcItem.color = '#1C9CC5';
+                arcItems.push(arcItem);
+                var arcItem = {};
+                arcItem.id = 'msg-item-7';
+                arcItem.class = 'msg-item-envelope';
+                arcItem.title = 'Gửi Email';
+                arcItem.icon = '<svg  xmlns="//www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M464 64H48C21.5 64 0 85.5 0 112v288c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM48 96h416c8.8 0 16 7.2 16 16v41.4c-21.9 18.5-53.2 44-150.6 121.3-16.9 13.4-50.2 45.7-73.4 45.3-23.2.4-56.6-31.9-73.4-45.3C85.2 197.4 53.9 171.9 32 153.4V112c0-8.8 7.2-16 16-16zm416 320H48c-8.8 0-16-7.2-16-16V195c22.8 18.7 58.8 47.6 130.7 104.7 20.5 16.4 56.7 52.5 93.3 52.3 36.4.3 72.3-35.5 93.3-52.3 71.9-57.1 107.9-86 130.7-104.7v205c0 8.8-7.2 16-16 16z"></path></svg>';
+                arcItem.href = 'mailto:duongtv0711@gmail.com';
+                arcItem.color = '#d7473b';
+                arcItems.push(arcItem);
+                var arcItem = {};
+                arcItem.id = 'msg-item-8';
+                arcItem.class = 'msg-item-phone';
+                arcItem.title = 'Call 0328818203';
+                arcItem.icon = '<svg xmlns="//www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z"></path></svg>';
+                arcItem.href = 'tel:0328818203';
+                arcItem.color = '#4EB625';
+                arcItems.push(arcItem);
+        
+                var arcItem = {};
+                arcItem.id = 'msg-item-9';
+                arcItem.class = 'msg-item-chiduong';
+                arcItem.title = 'Chỉ đường';
+                arcItem.icon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"/></svg>';
+                arcItem.href = 'https://goo.gl/maps/nfhmMK9z3UtiTZWt5';
+                arcItem.color = '#166534';
+                arcItems.push(arcItem);
+        
+                jQuery('#arcontactus').contactUs({
+                    items: arcItems
+                });
+            });
+            //]]>
+        </script>
+        <div id="arcontactus"></div>
+    </div>
+    <!--/Group Botton -->
+
+    <!-- Btn Hotline -->
+    <div class="hotline-phone-ring-wrap">
+        <div class="hotline-phone-ring">
+            <div class="hotline-phone-ring-circle"></div>
+            <div class="hotline-phone-ring-circle-fill"></div>
+            <div class="hotline-phone-ring-img-circle">
+                <a href="" class="pps-btn-img">
+                    <img src="assets/images/icon-call.png" width="50" height="50" loading="lazy" alt="Icon Phone">
+                </a>
+            </div>
+        </div>
+        <div class="hotline-bar">
+            <a href="tel:0328818203">
+                <span class="text-hotline">0328818203</span>
+            </a>
+        </div>
+    </div>
+    <!--/Btn Hotline -->
 
     <div id="pagetop">
-        <i class="fa-solid fa-arrow-up-from-bracket"></i>
+        <i class="gg-arrow-up"></i>
     </div>
+
     <footer>
         <div class="footer__container">
             <div class="wrap-content">
                 <div class="footer__heading">
                     <div class="info">
-                        <p class="info__title info__title--brown">Thông tin liên hệ</p>
-                        <p class="info__name info__name--greenft">cafe muối chú long</p>
+                        <h3 class="info__title info__title--brown">Thông tin liên hệ</h3>
+                        <p class="info__name info__name--greenft">cafe muối Chú Dương</p>
                     </div>
                 </div>
                 <div class="flexbox">
                     <div class="col1">
-                        <div class="img">
-                            <img src="assets/images/logo-big.png" alt="Logo footer" width="155" height="205" loading="lazy">
+                        <div class="img peShiner">
+                            <img src="assets/images/logo-big.png" alt="Logo footer" width="155" height="205"
+                                loading="lazy">
                         </div>
                         <div class="contact">
                             <div class="contact__item">
-                                <img src="assets/images/icon-phone.png" alt="Icon Phone" width="43" height="43" loading="lazy">
-                                <a href="tel:08906904">0898.898.999</a>
+                                <img src="assets/images/icon-phone.png" alt="Icon Phone" width="43" height="43"
+                                    loading="lazy">
+                                <a href="tel:0328818203" target="_blank">0328.818.203</a>
                             </div>
                             <div class="contact__item">
-                                <img src="assets/images/icon-address.png" alt="Icon address" width="43" height="43" loading="lazy">
-                                <a href="">68, Nguyễn Huệ, P.Bến Nghé, Quận 1, TP HCM</a>
+                                <img src="assets/images/icon-address.png" alt="Icon address" width="43" height="43"
+                                    loading="lazy">
+                                <a href="https://goo.gl/maps/nfhmMK9z3UtiTZWt5" target="_blank">Nguyễn Tri Phương, Thủ Dầu Một, Bình Dương</a>
                             </div>
                             <div class="contact__item">
-                                <img src="assets/images/icon-email.png" alt="Icon eicon" width="43" height="43" loading="lazy">
-                                <a href="mailto:caphemuoi@gmail.com">caphemuoi@gmail.com</a>
+                                <img src="assets/images/icon-email.png" alt="Icon eicon" width="43" height="43"
+                                    loading="lazy">
+                                <a href="mailto:duongtv0711@gmail.com" target="_blank">duongtv0711@gmail.com</a>
                             </div>
                             <div class="contact__item">
-                                <img src="assets/images/icon-web.png" alt="Icon icon-web.png" width="43" height="43" loading="lazy">
-                                <a href="caphemuoi.com">caphemuoi.com</a>
+                                <img src="assets/images/icon-web.png" alt="Icon icon-web.png" width="43" height="43"
+                                    loading="lazy">
+                                <a href="https://ddcoffee-release.vercel.app/" target="_blank">DD Fruit Tea</a>
                             </div>
                             <div class="contact__item">
-                                <img src="assets/images/icon-time.png" alt="Icon icon-time.png" width="43" height="43" loading="lazy">
-                                <a href="caphemuoi.com">Giờ mở cửa: 24/7</a>
+                                <img src="assets/images/icon-time.png" alt="Icon icon-time.png" width="43" height="43"
+                                    loading="lazy">
+                                <p>Giờ mở cửa: 24/7</p>
                             </div>
                         </div>
                     </div>
@@ -697,8 +905,9 @@
                             <p>Về chúng tôi</p>
                         </div>
                         <div class="pd-l about-us">
-                            <a href="">Về chúng long</a>
-                            <a href="">Danh sách hệ thống</a><a href="">Tuyển dụng</a><a href="">tin tức</a><a href="">Liên hệ</a>
+                            <a href="">Về Chú Dương</a>
+                            <a href="">Danh sách hệ thống</a><a href="">Tuyển dụng</a><a href="">tin tức</a><a
+                                href="">Liên hệ</a>
                         </div>
                         <div class="social">
                             <a href="">
@@ -714,7 +923,8 @@
                     </div>
                     <div class="col3">
                         <a href="">
-                            <img src="assets/images/footer-img.jpg" width="400" height="230" loading="lazy" alt="Image Footer">
+                            <img src="assets/images/footer-img.jpg" width="400" height="230" loading="lazy"
+                                alt="Image Footer">
                         </a>
                     </div>
                 </div>
@@ -724,6 +934,45 @@
             </div>
         </div>
     </footer>
+
+    <div class="cute2">
+        <script type="module" src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"></script>
+        <spline-viewer url="https://prod.spline.design/FVZWbQH2B6ndj9UU/scene.splinecode"
+            events-target="global"></spline-viewer>
+    </div>
+
+    <div class="messenger">
+        <!-- Messenger Plugin chat Code -->
+        <div id="fb-root"></div>
+
+        <!-- Your Plugin chat code -->
+        <div id="fb-customer-chat" class="fb-customerchat">
+        </div>
+        <script>
+            var chatbox = document.getElementById('fb-customer-chat');
+            chatbox.setAttribute("page_id", "104177989413535");
+            chatbox.setAttribute("attribution", "biz_inbox");
+        </script>
+
+        <!-- Your SDK code -->
+        <script>
+            window.fbAsyncInit = function () {
+                FB.init({
+                    xfbml: true,
+                    version: 'v17.0'
+                });
+            };
+
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+    </div>
+
 </body>
 
 </html>

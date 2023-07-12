@@ -92,6 +92,7 @@ $(function () {
 $(function () {
     $(".slider-slick").slick({
         fade: true,
+        arrows: false,
     });
 });
 // Menu
@@ -118,7 +119,10 @@ $(document).ready(function () {
         menuMb();
     });
 });
-
+$(document).ready(function () {
+    var api = $(".peShiner").peShiner({ api: true, paused: true, reverse: true, repeat: 1, color: 'oceanHL'}); //mã màu đặc biệt: monoHL, oceanHL, fireHL
+    api.resume();
+});
 $(function () {
     $(".js-slickbs-for").slick({
         slidesToShow: 1,
@@ -177,6 +181,11 @@ $(document).ready(function(){
         //
     });   
 });
+$(document).ready(function() {
+	Fancybox.bind('[data-fancybox="video"]', {
+        //
+    });   
+});
 $(document).ready(function(){
     AOS.init(); 
 });
@@ -226,5 +235,46 @@ $(function () {
         autoplay: true, 
         autoplaySpeed: 1000, 
         speed: 1000,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     });
+});
+
+$("html").easeScroll({
+    frameRate: 60,
+    animationTime: 1000,
+    stepSize: 120,
+    pulseAlgorithm: 1,
+    pulseScale: 8,
+    pulseNormalize: 1,
+    accelerationDelta: 20,
+    accelerationMax: 1,
+    keyboardSupport: true,
+    arrowScroll: 50,
+    touchpadSupport: true,
+    fixedBackground: true
 });
