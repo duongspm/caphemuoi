@@ -176,19 +176,29 @@ $(function () {
 		]
     });
 });
+
 $(document).ready(function(){
     Fancybox.bind('[data-fancybox="gallery"]', {
         //
     });   
 });
+
 $(document).ready(function() {
 	Fancybox.bind('[data-fancybox="video"]', {
         //
     });   
 });
+
+$(document).ready(function() {
+	Fancybox.bind('[data-fancybox="ggmap"]', {
+        //
+    });   
+});
+
 $(document).ready(function(){
     AOS.init(); 
 });
+
 $(document).ready(function(){
     $('.slider-for').slick({
         slidesToShow: 1,
@@ -264,17 +274,3 @@ $(function () {
     });
 });
 
-$("html").easeScroll({
-    frameRate: 60,
-    animationTime: 1000,
-    stepSize: 120,
-    pulseAlgorithm: 1,
-    pulseScale: 8,
-    pulseNormalize: 1,
-    accelerationDelta: 20,
-    accelerationMax: 1,
-    keyboardSupport: true,
-    arrowScroll: 50,
-    touchpadSupport: true,
-    fixedBackground: true
-});
