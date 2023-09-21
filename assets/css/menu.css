@@ -525,7 +525,10 @@ body {
     font-weight: 600;
     margin-bottom: 5px;
 }
-
+.form-group.valid .custom-input {
+    border-color: #3a58;
+    transition: 0.2s linear;
+}
 .form-group.invalid .custom-input {
     border-color: #f33a58;
     transition: 0.2s linear;

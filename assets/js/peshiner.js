@@ -389,7 +389,7 @@
 					};
 					while ((h = g.shift())) {
 						h = c(h);
-						if (c.browser.msie && h[0].src.match(/blank.png$/i) !== null) {
+						if ( h[0].src.match(/blank.png$/i) !== null) {
 							h.removeAttr("src");
 							h.replaceWith(h.clone());
 							if (!h.attr("data-src")) {
@@ -405,10 +405,6 @@
 						if (h.attr("data-src")) {
 							h.attr("src", h.attr("data-src"));
 							h.removeAttr("data-src")
-						} else {
-							if (c.browser.msie) {
-								h.attr("src", h.attr("src"))
-							}
 						}
 					}
 				} else {

@@ -81,12 +81,12 @@ body::-webkit-scrollbar-track {
 }
 
 .cute2 {
-    position: fixed;
+    /* position: fixed;
     right: 0.8em;
     bottom: 8em;
-    width: 100px;
-    height: 150px;
-    cursor: pointer;
+    width: 200px;
+    height: auto;
+    cursor: pointer; */
 }
 .arcontactus-widget.right.arcontactus-message {
     bottom: 16em !important;
@@ -1932,7 +1932,13 @@ footer::after {
 }
 
 @media screen and (max-width: 768px) {
-
+    .slider__item{
+        height: 140vw;
+    }
+    .slider__item img{
+        height: 100%;
+        object-fit: cover;
+    }
     .album__item {
         position: relative !important;
         top: auto !important;
